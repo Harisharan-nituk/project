@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <img src="download.png" alt="image logo" width="100%">
+    </div>
+    <div class="form-container">
+        <h2 class="form-title">Gaur Feedback form</h2>
+
+
+
+        <form  action="form.php" method="post">
+            <div class="form-field">
+                <label class="field-label" for="name">Name:</label>
+                <input class="text-input" name="NAME" type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <!-- value attribut define default value of the name varible  -->
+            <div class="form-field">
+                <label class="field-label" for="Project ">Project Name:</label>
+                <select name="Project" id="Project" class="text-input">
+                    <option  value="GAUR GREEN AVENUE"> GAUR GREEN AVENUE</option>
+                    <option  value="GAUR HOME"> GAUR HOME</option>
+                    <option  value="GAUR MALL"> GAUR MALL</option>
+                    <option  value="GAUR YAMUNA HEIGHT"> GAUR YAMUNA HEIGHT</option>
+
+                </select>
+            </div>
+            <div class="form-field">
+                <label class="field-label" for="Unit No.">Unit No.</label>
+                <input class="text-input" type="number" id="Unit No." PLACEHOLDER="UNIT" name="UnitNo" required>
+            </div>
+            <div class="form-field">
+                <label class="field-label" for="Mno.">Mobile Number </label>
+                <input class="text-input" type="number" id="Mno." placeholder="Mobile Number" name="mobile_number"
+                    required>
+            </div>
+            <div class="form-field">
+                <label class="field-label" for="reason">Reason for visit </label>
+                <input class="text-input" type="text" id="reason" placeholder="Your answer" name="Reason" required>
+            </div>
+            <div class="form-field">
+                <label class="field-label" for="rate_1"> 1. How do you feel about your dealing with an executive at
+                    counter ?
+                    (The executive dealing with you was polite, explained you in detail, shared the next process)
+                </label>
+
+                <input type="radio" name="exr1" value="5" id="rate_1" />excellent
+                <br>
+                <input type="radio" name="exr1" value="4" id="rate_1" />very good
+                <br>
+                <input type="radio" name="exr1" value="3" id="rate_1" />good
+                <br>
+                <input type="radio" name="exr1" value="2" id="rate_1" />not upto mark
+                <br>
+                <input type="radio" name="exr1" value="1" id="rate_1" />rohubst
+                <br>
+                <!-- exr sand for executive report   -->
+                <!-- creating database having values as executive verification value  -->
+            </div>
+            <div class="form-field">
+                <label class="field-label" for="rate_2"> 2. How do you feel about the process for which you visited us
+                    today ?
+                    (Your feedback regarding the length of process, documentation required etc.) </label>
+
+                <input type="radio" name="exr2" value="5" id="rate_2" />excellent
+                <br>
+                <input type="radio" name="exr2" value="4" id="rate_2" />very good
+                <br>
+                <input type="radio" name="exr2" value="3" id="rate_2" />good
+                <br>
+                <input type="radio" name="exr2" value="2" id="rate_2" />not upto mark
+                <br>
+                <input type="radio" name="exr2" value="1" id="rate_2" />rohubst
+                <br>
+
+            </div>
+            <div class="form-field">
+                <label class="field-label" for="rate_2">3. how do you feel about your overall experience dealing with us
+                    ?
+                </label>
+
+                <input type="radio" name="exr3" value="5" id="rate_3" />excellent
+                <br>
+                <input type="radio" name="exr3" value="4" id="rate_3" />very good
+                <br>
+                <input type="radio" name="exr3" value="3" id="rate_3" />good
+                <br>
+                <input type="radio" name="exr3" value="2" id="rate_3" />not upto mark
+                <br>
+                <input type="radio" name="exr3" value="1" id="rate_3" />rohubst
+                <br>
+
+            </div>
+
+
+            <div class="form-field">
+                <label class="field-label" for="imp">Please share any feedback you wish for improvement</label>
+                <input class="text-input" type="text" name="imp" id="imp" placeholder="your answer">
+            </div>
+
+            <div class="form-field">
+                <input class="submit-button" type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
+z
