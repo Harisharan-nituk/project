@@ -1,0 +1,32 @@
+video_generation_app/
+├── main.py                     # Main application entry point
+├── requirements.txt            # Python dependencies
+├── config.py                   # Configuration settings
+├── utils/
+│   ├── __init__.py
+│   ├── video_processor.py      # Video processing utilities
+│   ├── pose_estimator.py       # Pose estimation and tracking
+│   ├── face_swapper.py         # Face replacement functionality
+│   ├── clothing_changer.py     # Clothing manipulation
+│   └── background_remover.py   # Background processing
+├── models/
+│   ├── __init__.py
+│   ├── pose_model.py           # Pose estimation model
+│   ├── face_model.py           # Face detection/recognition model
+│   └── segmentation_model.py   # Image segmentation model
+├── data/
+│   ├── input_videos/           # Input video files
+│   ├── output_videos/          # Generated video files
+│   ├── faces/                  # Face images for swapping
+│   ├── clothing/               # Clothing templates
+│   └── backgrounds/            # Background images
+├── templates/
+│   ├── index.html              # Web interface
+│   └── upload.html             # Upload interface
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── uploads/                # Temporary upload storage
+└── app.py                      # Flask web application
